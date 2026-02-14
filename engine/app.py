@@ -4,6 +4,7 @@ import subprocess
 import sys
 from pathlib import Path
 import os
+import logging
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -425,7 +426,11 @@ def get_confusion_matrix():
             }
         })
     except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+        logging.exception("Error while computing confusion matrix")
+        return jsonify({
+            "status": "error",
+            "message": "An internal error occurred while computing the confusion matrix."
+        }), 500
 
 
 if __name__ == "__main__":
