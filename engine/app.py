@@ -377,8 +377,17 @@ def parse_description():
 
         return jsonify({"status": "success", "features": features})
 
-    except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+    except Exception:
+        logging.exception("Error while parsing applicant description")
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": "An internal error occurred while parsing the description.",
+                }
+            ),
+            500,
+        )
 
 
 @app.route("/api/model", methods=["GET"])
