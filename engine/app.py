@@ -279,8 +279,17 @@ def train():
             }
         )
 
-    except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+    except Exception:
+        logging.exception("Error while training model")
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": "An internal error occurred while training the model.",
+                }
+            ),
+            500,
+        )
 
 
 @app.route("/api/infer", methods=["POST"])
