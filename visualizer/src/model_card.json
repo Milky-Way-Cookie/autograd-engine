@@ -1,0 +1,25 @@
+{
+  "model": "MLP (3x4x4x1)",
+  "training": "Custom autograd engine",
+  "calibration": "Tanh output mapped to [0, 1] score",
+  "monitoring": [
+    "Drift checks",
+    "Bias review",
+    "Latency tracking"
+  ],
+  "dataset": {
+    "train_size": 960,
+    "eval_size": 240,
+    "seed": 7479,
+    "approval_rate": 0.747
+  },
+  "features": [
+    "income",
+    "debtRatio",
+    "savingsBuffer"
+  ],
+  "thresholds": {
+    "approve": 0.58,
+    "manual_review": 0.48
+  }
+}

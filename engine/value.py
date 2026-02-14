@@ -82,9 +82,38 @@ class Value:
                 
         build_topo(self)
         
-        # The base case: the derivative of the output with respect to itself is 1
         self.grad = 1.0
         
-        # Traverse the sorted list in reverse to apply the chain rule
         for node in reversed(topo):
             node._backward()
+
+def trace(root):
+    nodes, edges = set(), set()
+    def build(v):
+        if v not in nodes:
+            nodes.add(v)
+            for child in v._prev:
+                edges.add((child, v))
+                build(child)
+    build(root)
+    return nodes, edges
+
+def get_graph_json(root):
+    nodes, edges = trace(root)
+    data = {
+        "nodes": [],
+        "edges": []
+    }
+    
+    for n in nodes:
+        uid = str(id(n))
+        data["nodes"].append({
+            "id": uid,
+            "label": f"data: {n.data:.4f} | grad: {n.grad:.4f}",
+            "op": n._op
+        })
+        
+    for n1, n2 in edges:
+        data["edges"].append({"source": str(id(n1)), "target": str(id(n2))})
+        
+    return data

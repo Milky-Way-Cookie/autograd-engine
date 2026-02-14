@@ -1,6 +1,19 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
 
 body {
-  background-color: #0f172a;
-  color: white;
+  background-color: #020617;
+  color: #f8fafc;
+  margin: 0;
+}
+
+code,
+pre,
+.font-mono {
+  font-family: "IBM Plex Mono", "Consolas", monospace;
 }
