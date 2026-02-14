@@ -10,8 +10,8 @@
   "dataset": {
     "train_size": 960,
     "eval_size": 240,
-    "seed": 7479,
-    "approval_rate": 0.747
+    "seed": 2239,
+    "approval_rate": 0.714
   },
   "features": [
     "income",

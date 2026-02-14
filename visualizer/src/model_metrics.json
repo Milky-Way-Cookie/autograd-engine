@@ -1,16 +1,16 @@
 {
-  "precision": 0.828,
-  "recall": 0.914,
-  "f1": 0.869,
-  "accuracy": 0.787,
-  "auc": 0.775,
-  "ks": 0.422,
+  "precision": 0.748,
+  "recall": 0.97,
+  "f1": 0.845,
+  "accuracy": 0.75,
+  "auc": 0.722,
+  "ks": 0.383,
   "sample_count": 240,
-  "positive_rate": 0.771,
+  "positive_rate": 0.7,
   "confusion": {
-    "tp": 169,
-    "tn": 20,
-    "fp": 35,
-    "fn": 16
+    "tp": 163,
+    "tn": 17,
+    "fp": 55,
+    "fn": 5
   }
 }

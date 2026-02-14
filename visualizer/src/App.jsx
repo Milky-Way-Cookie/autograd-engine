@@ -32,8 +32,40 @@ function App() {
   const [training, setTraining] = useState(false);
   const [description, setDescription] = useState('');
   const [parseError, setParseError] = useState(null);
+  const [explanations, setExplanations] = useState([]);
+  const [confusionMatrix, setConfusionMatrix] = useState({});
 
   const API_BASE = 'http://localhost:5000/api';
+
+  // Fetch confusion matrix
+  const loadConfusionMatrix = async () => {
+    try {
+      const response = await fetch(`${API_BASE}/confusion-matrix`);
+      const data = await response.json();
+      if (data.status === 'success') {
+        setConfusionMatrix(data.confusion_matrix || {});
+      }
+    } catch (err) {
+      console.error('Failed to load confusion matrix:', err);
+    }
+  };
+
+  // Fetch explanations
+  const loadExplanations = async (featureInputs) => {
+    try {
+      const response = await fetch(`${API_BASE}/explain`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(featureInputs),
+      });
+      const data = await response.json();
+      if (data.status === 'success') {
+        setExplanations(data.contributions || []);
+      }
+    } catch (err) {
+      console.error('Failed to load explanations:', err);
+    }
+  };
 
   // Load model data on mount
   useEffect(() => {
@@ -45,6 +77,7 @@ function App() {
         setModelCard(data.card || {});
         setAuditReport(data.audit || []);
         setError(null);
+        await loadConfusionMatrix();
       } catch (err) {
         setError('Failed to connect to backend. Is Flask running? (python engine/app.py)');
         console.error(err);
@@ -54,17 +87,18 @@ function App() {
   }, []);
 
   // Run inference via API
-  const runInference = async () => {
+  const runInference = async (featureInputs = inputs) => {
     try {
       const response = await fetch(`${API_BASE}/infer`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(inputs),
+        body: JSON.stringify(featureInputs),
       });
       const data = await response.json();
       if (data.status === 'success') {
         setPrediction(data.score);
         setError(null);
+        await loadExplanations(featureInputs);
       }
     } catch (err) {
       setError('Inference failed');
@@ -73,7 +107,7 @@ function App() {
   };
 
   useEffect(() => {
-    runInference();
+    runInference(inputs);
   }, [inputs]);
 
   // Train new model
@@ -96,7 +130,8 @@ function App() {
         setModelMetrics(data.metrics);
         setModelCard(data.card);
         setError(null);
-        await runInference();
+        await runInference(inputs);
+        await loadConfusionMatrix();
       } else {
         setError(data.message);
       }
@@ -135,11 +170,22 @@ function App() {
   };
 
   const featureImpact = useMemo(() => {
-    return FEATURE_CONFIG.map((feature) => ({
-      ...feature,
-      impact: 1 / FEATURE_CONFIG.length,
-    }));
-  }, []);
+    if (explanations.length === 0) {
+      return FEATURE_CONFIG.map((feature) => ({
+        ...feature,
+        impact: 1 / FEATURE_CONFIG.length,
+      }));
+    }
+    return FEATURE_CONFIG.map((feature) => {
+      const explanation = explanations.find(
+        (exp) => exp.feature === feature.key
+      );
+      return {
+        ...feature,
+        impact: explanation ? explanation.impact_percentage / 100 : 0,
+      };
+    });
+  }, [explanations]);
 
   const score = Math.max(0, Math.min(1, prediction));
   const risk = Math.max(0, Math.min(1, 1 - score));
@@ -335,6 +381,43 @@ function App() {
                       <p className="mt-2 text-2xl font-semibold text-white">{metric.value}</p>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-rose-500/10">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h2 className="text-lg font-semibold text-white">Confusion Matrix</h2>
+                    <p className="text-xs uppercase tracking-[0.3em] text-slate-400">TP / TN / FP / FN</p>
+                  </div>
+                </div>
+                <div className="mt-6 grid grid-cols-2 gap-4">
+                  <div className="rounded-2xl border border-emerald-500/30 bg-emerald-950/40 p-4">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-300">True Positives</p>
+                    <p className="mt-2 text-2xl font-semibold text-emerald-300">{confusionMatrix?.tp ?? 0}</p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-500/30 bg-slate-800/40 p-4">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-slate-300">True Negatives</p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-300">{confusionMatrix?.tn ?? 0}</p>
+                  </div>
+                  <div className="rounded-2xl border border-rose-500/30 bg-rose-950/40 p-4">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-rose-300">False Positives</p>
+                    <p className="mt-2 text-2xl font-semibold text-rose-300">{confusionMatrix?.fp ?? 0}</p>
+                  </div>
+                  <div className="rounded-2xl border border-amber-500/30 bg-amber-950/40 p-4">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-amber-300">False Negatives</p>
+                    <p className="mt-2 text-2xl font-semibold text-amber-300">{confusionMatrix?.fn ?? 0}</p>
+                  </div>
+                </div>
+                <div className="mt-4 grid grid-cols-2 gap-4 text-xs">
+                  <div className="rounded-xl border border-white/10 bg-slate-950/60 p-3">
+                    <p className="uppercase tracking-[0.2em] text-slate-400">Accuracy</p>
+                    <p className="mt-1 font-semibold text-white">{(confusionMatrix?.accuracy ?? 0).toFixed(3)}</p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-slate-950/60 p-3">
+                    <p className="uppercase tracking-[0.2em] text-slate-400">Specificity</p>
+                    <p className="mt-1 font-semibold text-white">{(confusionMatrix?.specificity ?? 0).toFixed(3)}</p>
+                  </div>
                 </div>
               </div>
 

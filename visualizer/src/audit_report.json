@@ -1,2162 +1,2162 @@
 [
   {
     "id": 1,
-    "income": 0.89,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.89,
-    "score": 0.8642,
+    "income": 0.41,
+    "debtRatio": 0.14,
+    "savingsBuffer": 0.01,
+    "score": 0.7056,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 2,
-    "income": 0.88,
-    "debtRatio": 0.43,
-    "savingsBuffer": 0.49,
-    "score": 0.8041,
+    "income": 0.58,
+    "debtRatio": 0.17,
+    "savingsBuffer": 0.32,
+    "score": 0.8916,
     "decision": "Approved",
-    "actual": "Declined"
+    "actual": "Approved"
   },
   {
     "id": 3,
-    "income": 0.73,
-    "debtRatio": 0.07,
-    "savingsBuffer": 0.89,
-    "score": 0.8622,
+    "income": 0.25,
+    "debtRatio": 0.34,
+    "savingsBuffer": 0.32,
+    "score": 0.6234,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 4,
-    "income": 0.71,
-    "debtRatio": 0.61,
-    "savingsBuffer": 0.25,
-    "score": 0.4779,
+    "income": 0.2,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.0,
+    "score": 0.0945,
     "decision": "Declined",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 5,
-    "income": 0.62,
-    "debtRatio": 0.39,
-    "savingsBuffer": 0.3,
-    "score": 0.668,
+    "income": 0.44,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.36,
+    "score": 0.6065,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 6,
+    "income": 0.95,
+    "debtRatio": 0.08,
+    "savingsBuffer": 0.46,
+    "score": 0.9359,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
-    "id": 6,
-    "income": 0.2,
-    "debtRatio": 0.25,
-    "savingsBuffer": 0.14,
-    "score": 0.5526,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
     "id": 7,
-    "income": 0.73,
-    "debtRatio": 0.02,
-    "savingsBuffer": 0.32,
-    "score": 0.8363,
+    "income": 0.79,
+    "debtRatio": 0.42,
+    "savingsBuffer": 0.45,
+    "score": 0.8401,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 8,
-    "income": 0.68,
+    "income": 0.84,
     "debtRatio": 0.0,
-    "savingsBuffer": 0.56,
-    "score": 0.8561,
+    "savingsBuffer": 0.39,
+    "score": 0.9358,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 9,
-    "income": 0.24,
-    "debtRatio": 0.06,
-    "savingsBuffer": 0.34,
-    "score": 0.7566,
+    "income": 0.91,
+    "debtRatio": 0.27,
+    "savingsBuffer": 0.75,
+    "score": 0.9359,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 10,
-    "income": 0.18,
-    "debtRatio": 0.27,
-    "savingsBuffer": 0.01,
-    "score": 0.5128,
-    "decision": "Manual Review",
+    "income": 0.52,
+    "debtRatio": 0.38,
+    "savingsBuffer": 0.28,
+    "score": 0.6996,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 11,
-    "income": 0.93,
-    "debtRatio": 0.13,
-    "savingsBuffer": 0.8,
-    "score": 0.8621,
+    "income": 0.46,
+    "debtRatio": 0.05,
+    "savingsBuffer": 0.67,
+    "score": 0.9362,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 12,
-    "income": 0.95,
-    "debtRatio": 0.52,
-    "savingsBuffer": 0.9,
-    "score": 0.8388,
-    "decision": "Approved",
-    "actual": "Approved"
+    "income": 0.31,
+    "debtRatio": 0.65,
+    "savingsBuffer": 0.0,
+    "score": 0.1189,
+    "decision": "Declined",
+    "actual": "Declined"
   },
   {
     "id": 13,
-    "income": 0.58,
-    "debtRatio": 0.14,
-    "savingsBuffer": 0.87,
-    "score": 0.8571,
+    "income": 0.55,
+    "debtRatio": 0.15,
+    "savingsBuffer": 0.86,
+    "score": 0.9375,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 14,
-    "income": 0.85,
-    "debtRatio": 0.4,
-    "savingsBuffer": 0.48,
-    "score": 0.8045,
-    "decision": "Approved",
+    "income": 0.29,
+    "debtRatio": 0.49,
+    "savingsBuffer": 0.29,
+    "score": 0.4824,
+    "decision": "Manual Review",
     "actual": "Declined"
   },
   {
     "id": 15,
-    "income": 0.8,
-    "debtRatio": 0.34,
-    "savingsBuffer": 0.51,
-    "score": 0.8222,
+    "income": 0.77,
+    "debtRatio": 0.3,
+    "savingsBuffer": 0.56,
+    "score": 0.9196,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 16,
-    "income": 0.88,
-    "debtRatio": 0.12,
-    "savingsBuffer": 1.0,
-    "score": 0.8636,
+    "income": 0.62,
+    "debtRatio": 0.63,
+    "savingsBuffer": 0.5,
+    "score": 0.6671,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 17,
-    "income": 0.48,
-    "debtRatio": 0.38,
-    "savingsBuffer": 0.28,
-    "score": 0.6101,
+    "income": 0.24,
+    "debtRatio": 0.07,
+    "savingsBuffer": 0.26,
+    "score": 0.8555,
     "decision": "Approved",
-    "actual": "Declined"
+    "actual": "Approved"
   },
   {
     "id": 18,
-    "income": 0.23,
-    "debtRatio": 0.22,
-    "savingsBuffer": 0.23,
-    "score": 0.6059,
+    "income": 0.53,
+    "debtRatio": 0.13,
+    "savingsBuffer": 0.78,
+    "score": 0.9368,
     "decision": "Approved",
-    "actual": "Declined"
+    "actual": "Approved"
   },
   {
     "id": 19,
-    "income": 0.47,
-    "debtRatio": 0.01,
-    "savingsBuffer": 0.39,
-    "score": 0.8286,
+    "income": 0.4,
+    "debtRatio": 0.33,
+    "savingsBuffer": 0.75,
+    "score": 0.9086,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 20,
-    "income": 0.63,
-    "debtRatio": 0.51,
-    "savingsBuffer": 0.27,
-    "score": 0.5464,
+    "income": 0.36,
+    "debtRatio": 0.24,
+    "savingsBuffer": 0.0,
+    "score": 0.5697,
     "decision": "Manual Review",
     "actual": "Approved"
   },
   {
     "id": 21,
-    "income": 0.98,
-    "debtRatio": 0.3,
-    "savingsBuffer": 1.0,
-    "score": 0.8612,
+    "income": 0.49,
+    "debtRatio": 0.23,
+    "savingsBuffer": 0.19,
+    "score": 0.7633,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 22,
-    "income": 0.62,
-    "debtRatio": 0.17,
-    "savingsBuffer": 0.1,
-    "score": 0.6967,
+    "income": 0.56,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.73,
+    "score": 0.8363,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 23,
-    "income": 0.73,
-    "debtRatio": 0.34,
-    "savingsBuffer": 0.28,
-    "score": 0.7264,
+    "income": 0.9,
+    "debtRatio": 0.43,
+    "savingsBuffer": 0.51,
+    "score": 0.8826,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 24,
-    "income": 0.63,
-    "debtRatio": 0.56,
-    "savingsBuffer": 0.16,
-    "score": 0.4752,
-    "decision": "Declined",
+    "income": 0.91,
+    "debtRatio": 0.2,
+    "savingsBuffer": 0.73,
+    "score": 0.9373,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 25,
-    "income": 0.68,
-    "debtRatio": 0.48,
+    "income": 0.79,
+    "debtRatio": 0.22,
     "savingsBuffer": 0.48,
-    "score": 0.6987,
+    "score": 0.9244,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 26,
-    "income": 0.26,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.15,
-    "score": 0.5197,
-    "decision": "Manual Review",
-    "actual": "Declined"
+    "income": 0.74,
+    "debtRatio": 0.05,
+    "savingsBuffer": 0.32,
+    "score": 0.9297,
+    "decision": "Approved",
+    "actual": "Approved"
   },
   {
     "id": 27,
-    "income": 0.7,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.5,
-    "score": 0.8116,
+    "income": 0.66,
+    "debtRatio": 0.35,
+    "savingsBuffer": 0.28,
+    "score": 0.7641,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 28,
-    "income": 0.66,
-    "debtRatio": 0.11,
-    "savingsBuffer": 0.43,
-    "score": 0.8358,
+    "income": 0.79,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.97,
+    "score": 0.9396,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 29,
-    "income": 0.44,
-    "debtRatio": 0.03,
-    "savingsBuffer": 0.43,
-    "score": 0.8287,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 30,
-    "income": 0.73,
-    "debtRatio": 0.09,
-    "savingsBuffer": 0.85,
-    "score": 0.8612,
-    "decision": "Approved",
+    "income": 0.37,
+    "debtRatio": 0.54,
+    "savingsBuffer": 0.33,
+    "score": 0.5456,
+    "decision": "Manual Review",
     "actual": "Approved"
   },
   {
+    "id": 30,
+    "income": 0.54,
+    "debtRatio": 0.51,
+    "savingsBuffer": 0.18,
+    "score": 0.5665,
+    "decision": "Manual Review",
+    "actual": "Declined"
+  },
+  {
     "id": 31,
-    "income": 0.4,
-    "debtRatio": 0.19,
-    "savingsBuffer": 0.23,
-    "score": 0.6899,
+    "income": 0.75,
+    "debtRatio": 0.33,
+    "savingsBuffer": 0.52,
+    "score": 0.9037,
     "decision": "Approved",
     "actual": "Declined"
   },
   {
     "id": 32,
-    "income": 0.26,
-    "debtRatio": 0.55,
-    "savingsBuffer": 0.31,
-    "score": 0.3602,
-    "decision": "Declined",
+    "income": 0.51,
+    "debtRatio": 0.33,
+    "savingsBuffer": 0.8,
+    "score": 0.9246,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 33,
-    "income": 0.81,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.58,
-    "score": 0.8491,
+    "income": 0.38,
+    "debtRatio": 0.33,
+    "savingsBuffer": 0.25,
+    "score": 0.6696,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 34,
-    "income": 0.84,
-    "debtRatio": 0.09,
-    "savingsBuffer": 0.31,
-    "score": 0.8327,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 35,
-    "income": 0.29,
-    "debtRatio": 0.44,
-    "savingsBuffer": 0.02,
-    "score": 0.4184,
+    "income": 0.26,
+    "debtRatio": 0.39,
+    "savingsBuffer": 0.15,
+    "score": 0.4032,
     "decision": "Declined",
     "actual": "Declined"
   },
   {
+    "id": 35,
+    "income": 0.74,
+    "debtRatio": 0.1,
+    "savingsBuffer": 0.65,
+    "score": 0.9371,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
     "id": 36,
-    "income": 0.5,
-    "debtRatio": 0.42,
-    "savingsBuffer": 0.13,
-    "score": 0.5405,
-    "decision": "Manual Review",
-    "actual": "Declined"
+    "income": 0.51,
+    "debtRatio": 0.04,
+    "savingsBuffer": 0.62,
+    "score": 0.9362,
+    "decision": "Approved",
+    "actual": "Approved"
   },
   {
     "id": 37,
-    "income": 0.66,
-    "debtRatio": 0.48,
-    "savingsBuffer": 0.49,
-    "score": 0.6915,
+    "income": 0.52,
+    "debtRatio": 0.34,
+    "savingsBuffer": 1.0,
+    "score": 0.9345,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 38,
-    "income": 0.54,
-    "debtRatio": 0.56,
-    "savingsBuffer": 0.57,
-    "score": 0.5354,
+    "income": 0.46,
+    "debtRatio": 0.37,
+    "savingsBuffer": 0.1,
+    "score": 0.5768,
     "decision": "Manual Review",
     "actual": "Declined"
   },
   {
     "id": 39,
-    "income": 0.76,
-    "debtRatio": 0.11,
-    "savingsBuffer": 0.76,
-    "score": 0.8597,
+    "income": 0.27,
+    "debtRatio": 0.44,
+    "savingsBuffer": 0.28,
+    "score": 0.4896,
+    "decision": "Manual Review",
+    "actual": "Declined"
+  },
+  {
+    "id": 40,
+    "income": 0.86,
+    "debtRatio": 0.07,
+    "savingsBuffer": 0.5,
+    "score": 0.9362,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
-    "id": 40,
-    "income": 0.28,
-    "debtRatio": 0.43,
-    "savingsBuffer": 0.23,
-    "score": 0.4341,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
     "id": 41,
-    "income": 0.83,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.72,
-    "score": 0.8622,
+    "income": 0.65,
+    "debtRatio": 0.1,
+    "savingsBuffer": 0.27,
+    "score": 0.9125,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 42,
-    "income": 0.39,
-    "debtRatio": 0.26,
-    "savingsBuffer": 0.0,
-    "score": 0.5837,
+    "income": 0.61,
+    "debtRatio": 0.17,
+    "savingsBuffer": 0.55,
+    "score": 0.9289,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 43,
-    "income": 0.88,
-    "debtRatio": 0.2,
-    "savingsBuffer": 0.72,
-    "score": 0.8582,
+    "income": 0.54,
+    "debtRatio": 0.56,
+    "savingsBuffer": 0.38,
+    "score": 0.6331,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 44,
-    "income": 0.5,
-    "debtRatio": 0.42,
-    "savingsBuffer": 0.47,
-    "score": 0.6438,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 45,
-    "income": 0.77,
-    "debtRatio": 0.34,
-    "savingsBuffer": 0.75,
-    "score": 0.8457,
+    "income": 0.52,
+    "debtRatio": 0.16,
+    "savingsBuffer": 0.19,
+    "score": 0.8335,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
+    "id": 45,
+    "income": 0.4,
+    "debtRatio": 0.37,
+    "savingsBuffer": 0.1,
+    "score": 0.5494,
+    "decision": "Manual Review",
+    "actual": "Declined"
+  },
+  {
     "id": 46,
-    "income": 0.42,
-    "debtRatio": 0.47,
-    "savingsBuffer": 0.26,
-    "score": 0.4607,
-    "decision": "Declined",
+    "income": 0.43,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.15,
+    "score": 0.4824,
+    "decision": "Manual Review",
     "actual": "Approved"
   },
   {
     "id": 47,
-    "income": 0.46,
-    "debtRatio": 0.53,
-    "savingsBuffer": 0.23,
-    "score": 0.4229,
-    "decision": "Declined",
+    "income": 0.57,
+    "debtRatio": 0.15,
+    "savingsBuffer": 0.42,
+    "score": 0.9167,
+    "decision": "Approved",
     "actual": "Declined"
   },
   {
     "id": 48,
-    "income": 0.63,
-    "debtRatio": 0.02,
-    "savingsBuffer": 0.54,
-    "score": 0.8528,
+    "income": 0.8,
+    "debtRatio": 0.0,
+    "savingsBuffer": 1.0,
+    "score": 0.9396,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 49,
-    "income": 0.83,
-    "debtRatio": 0.13,
-    "savingsBuffer": 0.69,
-    "score": 0.8587,
+    "income": 0.66,
+    "debtRatio": 0.51,
+    "savingsBuffer": 0.63,
+    "score": 0.8243,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 50,
-    "income": 0.64,
-    "debtRatio": 0.43,
-    "savingsBuffer": 0.69,
-    "score": 0.7935,
+    "income": 0.58,
+    "debtRatio": 0.33,
+    "savingsBuffer": 0.18,
+    "score": 0.6968,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 51,
-    "income": 0.55,
-    "debtRatio": 0.07,
-    "savingsBuffer": 0.65,
-    "score": 0.853,
+    "income": 0.75,
+    "debtRatio": 0.46,
+    "savingsBuffer": 0.72,
+    "score": 0.9036,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 52,
+    "income": 0.84,
+    "debtRatio": 0.27,
+    "savingsBuffer": 0.57,
+    "score": 0.9275,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
-    "id": 52,
-    "income": 0.16,
-    "debtRatio": 0.51,
-    "savingsBuffer": 0.09,
-    "score": 0.3432,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
     "id": 53,
-    "income": 0.59,
-    "debtRatio": 0.48,
-    "savingsBuffer": 0.19,
-    "score": 0.5367,
-    "decision": "Manual Review",
+    "income": 0.78,
+    "debtRatio": 0.24,
+    "savingsBuffer": 0.61,
+    "score": 0.931,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 54,
-    "income": 0.2,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.29,
-    "score": 0.5121,
-    "decision": "Manual Review",
+    "income": 0.35,
+    "debtRatio": 0.39,
+    "savingsBuffer": 0.44,
+    "score": 0.7247,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 55,
-    "income": 0.38,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.34,
-    "score": 0.5863,
+    "income": 0.65,
+    "debtRatio": 0.45,
+    "savingsBuffer": 0.5,
+    "score": 0.8094,
     "decision": "Approved",
     "actual": "Declined"
   },
   {
     "id": 56,
-    "income": 0.79,
-    "debtRatio": 0.2,
-    "savingsBuffer": 0.33,
-    "score": 0.8096,
+    "income": 0.81,
+    "debtRatio": 0.18,
+    "savingsBuffer": 0.61,
+    "score": 0.9348,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 57,
-    "income": 0.36,
-    "debtRatio": 0.17,
-    "savingsBuffer": 0.81,
-    "score": 0.8419,
+    "income": 0.15,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.27,
+    "score": 0.8797,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 58,
-    "income": 0.7,
-    "debtRatio": 0.33,
-    "savingsBuffer": 0.44,
-    "score": 0.7874,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 59,
-    "income": 0.21,
-    "debtRatio": 0.28,
-    "savingsBuffer": 0.48,
-    "score": 0.642,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 60,
-    "income": 0.83,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.66,
-    "score": 0.8459,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 61,
-    "income": 0.63,
-    "debtRatio": 0.41,
-    "savingsBuffer": 0.44,
-    "score": 0.7184,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 62,
-    "income": 0.12,
-    "debtRatio": 0.19,
-    "savingsBuffer": 0.24,
-    "score": 0.5922,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 63,
-    "income": 0.14,
-    "debtRatio": 0.4,
-    "savingsBuffer": 0.04,
-    "score": 0.3888,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 64,
-    "income": 0.96,
-    "debtRatio": 0.5,
-    "savingsBuffer": 0.8,
-    "score": 0.8396,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 65,
-    "income": 0.89,
-    "debtRatio": 0.27,
-    "savingsBuffer": 0.57,
-    "score": 0.8471,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 66,
-    "income": 0.61,
-    "debtRatio": 0.53,
-    "savingsBuffer": 0.55,
-    "score": 0.6197,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 67,
-    "income": 0.34,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.29,
-    "score": 0.5536,
-    "decision": "Manual Review",
-    "actual": "Declined"
-  },
-  {
-    "id": 68,
-    "income": 0.53,
-    "debtRatio": 0.23,
-    "savingsBuffer": 0.12,
-    "score": 0.6589,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 69,
-    "income": 0.32,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.02,
-    "score": 0.5421,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 70,
-    "income": 0.25,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.0,
-    "score": 0.5152,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 71,
-    "income": 0.6,
-    "debtRatio": 0.3,
-    "savingsBuffer": 0.57,
-    "score": 0.8178,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 72,
-    "income": 0.63,
-    "debtRatio": 0.39,
-    "savingsBuffer": 0.44,
-    "score": 0.7398,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 73,
-    "income": 0.72,
-    "debtRatio": 0.34,
-    "savingsBuffer": 0.69,
-    "score": 0.8381,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 74,
-    "income": 0.62,
-    "debtRatio": 0.14,
-    "savingsBuffer": 0.33,
-    "score": 0.8016,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 75,
-    "income": 0.7,
-    "debtRatio": 0.03,
-    "savingsBuffer": 0.24,
-    "score": 0.8154,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 76,
-    "income": 0.63,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.78,
-    "score": 0.8409,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 77,
-    "income": 0.35,
-    "debtRatio": 0.61,
-    "savingsBuffer": 0.07,
-    "score": 0.3425,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 78,
-    "income": 0.64,
-    "debtRatio": 0.11,
-    "savingsBuffer": 0.38,
-    "score": 0.8257,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 79,
-    "income": 0.8,
-    "debtRatio": 0.47,
-    "savingsBuffer": 0.64,
-    "score": 0.8094,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 80,
-    "income": 0.65,
-    "debtRatio": 0.47,
-    "savingsBuffer": 0.66,
-    "score": 0.763,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 81,
-    "income": 0.78,
-    "debtRatio": 0.23,
-    "savingsBuffer": 0.42,
-    "score": 0.8241,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 82,
-    "income": 0.86,
-    "debtRatio": 0.17,
-    "savingsBuffer": 0.9,
-    "score": 0.8616,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 83,
-    "income": 0.25,
-    "debtRatio": 0.42,
-    "savingsBuffer": 0.11,
-    "score": 0.4183,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 84,
-    "income": 0.82,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.75,
-    "score": 0.8625,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 85,
-    "income": 0.55,
-    "debtRatio": 0.46,
-    "savingsBuffer": 0.56,
-    "score": 0.68,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 86,
-    "income": 0.46,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.05,
-    "score": 0.5858,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 87,
-    "income": 0.67,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.45,
-    "score": 0.771,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 88,
-    "income": 0.69,
-    "debtRatio": 0.16,
-    "savingsBuffer": 0.5,
-    "score": 0.8407,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 89,
-    "income": 0.69,
-    "debtRatio": 0.17,
-    "savingsBuffer": 0.63,
-    "score": 0.8506,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 90,
-    "income": 0.95,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.56,
-    "score": 0.8609,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 91,
-    "income": 0.44,
-    "debtRatio": 0.22,
-    "savingsBuffer": 0.21,
-    "score": 0.677,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 92,
-    "income": 0.81,
-    "debtRatio": 0.18,
-    "savingsBuffer": 0.73,
-    "score": 0.8575,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 93,
-    "income": 0.91,
-    "debtRatio": 0.3,
-    "savingsBuffer": 0.79,
-    "score": 0.8565,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 94,
     "income": 0.33,
-    "debtRatio": 0.49,
-    "savingsBuffer": 0.28,
-    "score": 0.4114,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 95,
-    "income": 0.45,
-    "debtRatio": 0.57,
-    "savingsBuffer": 0.53,
-    "score": 0.4504,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 96,
-    "income": 0.81,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.59,
-    "score": 0.8325,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 97,
-    "income": 0.65,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.21,
-    "score": 0.7333,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 98,
-    "income": 0.72,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.54,
-    "score": 0.822,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 99,
-    "income": 0.44,
-    "debtRatio": 0.41,
-    "savingsBuffer": 0.31,
-    "score": 0.5559,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 100,
-    "income": 0.33,
-    "debtRatio": 0.54,
-    "savingsBuffer": 0.55,
-    "score": 0.4261,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 101,
-    "income": 0.69,
-    "debtRatio": 0.01,
-    "savingsBuffer": 0.86,
-    "score": 0.8623,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 102,
-    "income": 0.16,
-    "debtRatio": 0.43,
-    "savingsBuffer": 0.57,
-    "score": 0.4503,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 103,
-    "income": 0.7,
-    "debtRatio": 0.23,
-    "savingsBuffer": 0.44,
-    "score": 0.8195,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 104,
-    "income": 0.69,
-    "debtRatio": 0.41,
-    "savingsBuffer": 0.03,
-    "score": 0.5932,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 105,
-    "income": 0.86,
-    "debtRatio": 0.43,
-    "savingsBuffer": 0.49,
-    "score": 0.8023,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 106,
-    "income": 0.92,
-    "debtRatio": 0.07,
-    "savingsBuffer": 0.31,
-    "score": 0.8421,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 107,
-    "income": 0.34,
-    "debtRatio": 0.03,
-    "savingsBuffer": 0.42,
-    "score": 0.8132,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 108,
-    "income": 0.55,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.87,
-    "score": 0.8387,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 109,
-    "income": 0.26,
-    "debtRatio": 0.56,
-    "savingsBuffer": 0.23,
-    "score": 0.3496,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 110,
-    "income": 0.07,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.43,
-    "score": 0.6081,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 111,
-    "income": 0.29,
-    "debtRatio": 0.2,
-    "savingsBuffer": 0.15,
-    "score": 0.615,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 112,
-    "income": 0.46,
-    "debtRatio": 0.2,
-    "savingsBuffer": 0.52,
-    "score": 0.8106,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 113,
-    "income": 0.69,
-    "debtRatio": 0.66,
-    "savingsBuffer": 0.39,
-    "score": 0.443,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 114,
-    "income": 0.2,
-    "debtRatio": 0.4,
-    "savingsBuffer": 0.27,
-    "score": 0.4214,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 115,
-    "income": 0.59,
-    "debtRatio": 0.33,
-    "savingsBuffer": 0.31,
-    "score": 0.7055,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 116,
-    "income": 0.67,
-    "debtRatio": 0.53,
-    "savingsBuffer": 0.42,
-    "score": 0.6015,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 117,
-    "income": 0.51,
-    "debtRatio": 0.54,
-    "savingsBuffer": 0.27,
-    "score": 0.4393,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 118,
-    "income": 0.69,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.71,
-    "score": 0.84,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 119,
-    "income": 0.44,
-    "debtRatio": 0.18,
-    "savingsBuffer": 0.47,
-    "score": 0.8015,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 120,
-    "income": 0.82,
-    "debtRatio": 0.05,
-    "savingsBuffer": 0.49,
-    "score": 0.8544,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 121,
-    "income": 0.31,
-    "debtRatio": 0.24,
-    "savingsBuffer": 0.62,
-    "score": 0.7887,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 122,
-    "income": 0.14,
-    "debtRatio": 0.58,
-    "savingsBuffer": 0.07,
-    "score": 0.3228,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 123,
-    "income": 0.71,
-    "debtRatio": 0.04,
-    "savingsBuffer": 0.29,
-    "score": 0.8265,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 124,
-    "income": 0.14,
-    "debtRatio": 0.3,
-    "savingsBuffer": 0.45,
-    "score": 0.5421,
-    "decision": "Manual Review",
-    "actual": "Declined"
-  },
-  {
-    "id": 125,
-    "income": 0.54,
-    "debtRatio": 0.33,
-    "savingsBuffer": 0.38,
-    "score": 0.7132,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 126,
-    "income": 0.55,
-    "debtRatio": 0.09,
-    "savingsBuffer": 0.34,
-    "score": 0.8051,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 127,
-    "income": 0.61,
-    "debtRatio": 0.2,
-    "savingsBuffer": 0.53,
-    "score": 0.8324,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 128,
-    "income": 0.87,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.37,
-    "score": 0.8293,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 129,
-    "income": 0.39,
-    "debtRatio": 0.46,
-    "savingsBuffer": 0.32,
-    "score": 0.4715,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 130,
-    "income": 0.5,
-    "debtRatio": 0.22,
-    "savingsBuffer": 0.67,
-    "score": 0.8366,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 131,
-    "income": 0.4,
-    "debtRatio": 0.52,
-    "savingsBuffer": 0.38,
-    "score": 0.4252,
-    "decision": "Declined",
-    "actual": "Approved"
-  },
-  {
-    "id": 132,
-    "income": 0.51,
-    "debtRatio": 0.17,
-    "savingsBuffer": 0.22,
-    "score": 0.7213,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 133,
-    "income": 0.52,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.72,
-    "score": 0.8185,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 134,
-    "income": 0.69,
-    "debtRatio": 0.23,
-    "savingsBuffer": 0.45,
-    "score": 0.8195,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 135,
-    "income": 0.46,
-    "debtRatio": 0.26,
-    "savingsBuffer": 0.53,
-    "score": 0.7918,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 136,
-    "income": 0.57,
-    "debtRatio": 0.01,
-    "savingsBuffer": 0.8,
-    "score": 0.8601,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 137,
-    "income": 0.45,
-    "debtRatio": 0.26,
-    "savingsBuffer": 0.22,
-    "score": 0.661,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 138,
-    "income": 0.18,
-    "debtRatio": 0.53,
-    "savingsBuffer": 0.0,
-    "score": 0.3355,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 139,
-    "income": 0.27,
-    "debtRatio": 0.68,
-    "savingsBuffer": 0.16,
-    "score": 0.3224,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 140,
-    "income": 0.61,
-    "debtRatio": 0.28,
-    "savingsBuffer": 0.63,
-    "score": 0.8325,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 141,
-    "income": 0.41,
-    "debtRatio": 0.74,
-    "savingsBuffer": 0.26,
-    "score": 0.3298,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 142,
-    "income": 0.62,
-    "debtRatio": 0.35,
-    "savingsBuffer": 0.7,
-    "score": 0.8263,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 143,
-    "income": 0.66,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.66,
-    "score": 0.8589,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 144,
-    "income": 0.83,
-    "debtRatio": 0.58,
-    "savingsBuffer": 0.8,
-    "score": 0.7823,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 145,
-    "income": 0.72,
-    "debtRatio": 0.29,
-    "savingsBuffer": 0.28,
-    "score": 0.7466,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 146,
-    "income": 0.72,
-    "debtRatio": 0.26,
-    "savingsBuffer": 0.76,
-    "score": 0.851,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 147,
-    "income": 0.32,
-    "debtRatio": 0.18,
-    "savingsBuffer": 0.72,
-    "score": 0.8289,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 148,
-    "income": 0.36,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.2,
-    "score": 0.5458,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 149,
-    "income": 0.88,
-    "debtRatio": 0.09,
-    "savingsBuffer": 0.73,
-    "score": 0.8613,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 150,
-    "income": 0.6,
-    "debtRatio": 0.44,
-    "savingsBuffer": 0.46,
-    "score": 0.6826,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 151,
-    "income": 0.58,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.47,
-    "score": 0.8149,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 152,
-    "income": 0.88,
-    "debtRatio": 0.15,
-    "savingsBuffer": 0.38,
-    "score": 0.8396,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 153,
-    "income": 0.61,
-    "debtRatio": 0.1,
-    "savingsBuffer": 0.74,
-    "score": 0.8564,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 154,
-    "income": 0.73,
-    "debtRatio": 0.34,
-    "savingsBuffer": 0.41,
-    "score": 0.78,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 155,
-    "income": 0.55,
-    "debtRatio": 0.57,
-    "savingsBuffer": 0.15,
-    "score": 0.4291,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 156,
-    "income": 0.77,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.21,
-    "score": 0.7241,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 157,
-    "income": 0.9,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.83,
-    "score": 0.8639,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 158,
-    "income": 0.82,
-    "debtRatio": 0.29,
-    "savingsBuffer": 0.71,
-    "score": 0.851,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 159,
-    "income": 0.51,
-    "debtRatio": 0.24,
-    "savingsBuffer": 0.52,
-    "score": 0.8076,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 160,
-    "income": 0.41,
-    "debtRatio": 0.35,
-    "savingsBuffer": 0.12,
-    "score": 0.5555,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 161,
-    "income": 0.93,
-    "debtRatio": 0.23,
-    "savingsBuffer": 0.75,
-    "score": 0.859,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 162,
-    "income": 0.74,
-    "debtRatio": 0.25,
-    "savingsBuffer": 0.38,
-    "score": 0.8057,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 163,
-    "income": 0.25,
-    "debtRatio": 0.1,
-    "savingsBuffer": 0.52,
-    "score": 0.8054,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 164,
-    "income": 0.47,
-    "debtRatio": 0.61,
-    "savingsBuffer": 0.69,
-    "score": 0.482,
-    "decision": "Manual Review",
-    "actual": "Declined"
-  },
-  {
-    "id": 165,
-    "income": 0.33,
-    "debtRatio": 0.08,
-    "savingsBuffer": 0.21,
-    "score": 0.7148,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 166,
-    "income": 0.84,
-    "debtRatio": 0.14,
-    "savingsBuffer": 0.08,
-    "score": 0.7476,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 167,
-    "income": 0.57,
-    "debtRatio": 0.33,
-    "savingsBuffer": 0.31,
-    "score": 0.6989,
-    "decision": "Approved",
-    "actual": "Declined"
-  },
-  {
-    "id": 168,
-    "income": 0.69,
-    "debtRatio": 0.35,
-    "savingsBuffer": 0.12,
-    "score": 0.6453,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 169,
-    "income": 0.78,
-    "debtRatio": 0.25,
-    "savingsBuffer": 0.47,
-    "score": 0.83,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 170,
-    "income": 0.86,
-    "debtRatio": 0.02,
-    "savingsBuffer": 0.62,
-    "score": 0.8606,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 171,
-    "income": 0.62,
-    "debtRatio": 0.3,
-    "savingsBuffer": 0.14,
-    "score": 0.6586,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 172,
-    "income": 0.76,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.3,
-    "score": 0.8377,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 173,
-    "income": 0.63,
-    "debtRatio": 0.22,
-    "savingsBuffer": 0.6,
-    "score": 0.8392,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 174,
-    "income": 0.74,
-    "debtRatio": 0.3,
-    "savingsBuffer": 0.35,
-    "score": 0.7779,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 175,
-    "income": 0.92,
-    "debtRatio": 0.11,
-    "savingsBuffer": 0.74,
-    "score": 0.8616,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 176,
-    "income": 0.68,
-    "debtRatio": 0.11,
-    "savingsBuffer": 0.53,
-    "score": 0.8474,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 177,
-    "income": 0.52,
-    "debtRatio": 0.35,
-    "savingsBuffer": 0.43,
-    "score": 0.7161,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 178,
-    "income": 0.39,
-    "debtRatio": 0.28,
-    "savingsBuffer": 0.02,
-    "score": 0.5787,
-    "decision": "Manual Review",
-    "actual": "Declined"
-  },
-  {
-    "id": 179,
-    "income": 0.44,
-    "debtRatio": 0.39,
-    "savingsBuffer": 0.68,
-    "score": 0.7419,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 180,
-    "income": 0.55,
-    "debtRatio": 0.49,
-    "savingsBuffer": 0.53,
-    "score": 0.6297,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 181,
-    "income": 0.57,
-    "debtRatio": 0.48,
-    "savingsBuffer": 0.12,
-    "score": 0.5238,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 182,
-    "income": 0.46,
-    "debtRatio": 0.33,
-    "savingsBuffer": 0.26,
-    "score": 0.6304,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 183,
-    "income": 0.57,
-    "debtRatio": 0.2,
-    "savingsBuffer": 0.48,
-    "score": 0.8185,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 184,
-    "income": 0.67,
-    "debtRatio": 0.22,
-    "savingsBuffer": 0.58,
+    "debtRatio": 0.13,
+    "savingsBuffer": 0.25,
     "score": 0.8405,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
-    "id": 185,
-    "income": 0.32,
-    "debtRatio": 0.52,
-    "savingsBuffer": 0.29,
-    "score": 0.3849,
+    "id": 59,
+    "income": 0.87,
+    "debtRatio": 0.0,
+    "savingsBuffer": 1.0,
+    "score": 0.9397,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 60,
+    "income": 0.2,
+    "debtRatio": 0.57,
+    "savingsBuffer": 0.0,
+    "score": 0.0853,
     "decision": "Declined",
     "actual": "Approved"
   },
   {
-    "id": 186,
-    "income": 0.76,
+    "id": 61,
+    "income": 0.63,
+    "debtRatio": 0.62,
+    "savingsBuffer": 0.84,
+    "score": 0.8356,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 62,
+    "income": 0.58,
+    "debtRatio": 0.49,
+    "savingsBuffer": 0.47,
+    "score": 0.7402,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 63,
+    "income": 0.31,
+    "debtRatio": 0.86,
+    "savingsBuffer": 0.08,
+    "score": 0.0812,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 64,
+    "income": 0.84,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.67,
+    "score": 0.9387,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 65,
+    "income": 0.93,
     "debtRatio": 0.38,
+    "savingsBuffer": 0.79,
+    "score": 0.9326,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 66,
+    "income": 0.92,
+    "debtRatio": 0.26,
+    "savingsBuffer": 0.59,
+    "score": 0.9317,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 67,
+    "income": 0.74,
+    "debtRatio": 0.24,
+    "savingsBuffer": 0.77,
+    "score": 0.9356,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 68,
+    "income": 0.47,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.33,
+    "score": 0.9262,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 69,
+    "income": 0.5,
+    "debtRatio": 0.12,
+    "savingsBuffer": 0.81,
+    "score": 0.9371,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 70,
+    "income": 0.5,
+    "debtRatio": 0.04,
+    "savingsBuffer": 0.5,
+    "score": 0.9331,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 71,
+    "income": 0.2,
+    "debtRatio": 0.5,
+    "savingsBuffer": 0.15,
+    "score": 0.1563,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 72,
+    "income": 0.74,
+    "debtRatio": 0.15,
+    "savingsBuffer": 1.0,
+    "score": 0.9391,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 73,
+    "income": 0.8,
+    "debtRatio": 0.26,
+    "savingsBuffer": 0.16,
+    "score": 0.8223,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 74,
+    "income": 0.76,
+    "debtRatio": 0.3,
+    "savingsBuffer": 0.67,
+    "score": 0.9285,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 75,
+    "income": 0.6,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.65,
+    "score": 0.8062,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 76,
+    "income": 0.33,
+    "debtRatio": 0.65,
+    "savingsBuffer": 0.41,
+    "score": 0.4638,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 77,
+    "income": 0.53,
+    "debtRatio": 0.14,
+    "savingsBuffer": 0.32,
+    "score": 0.8974,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 78,
+    "income": 0.7,
+    "debtRatio": 0.03,
+    "savingsBuffer": 0.47,
+    "score": 0.9354,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 79,
+    "income": 0.7,
+    "debtRatio": 0.17,
+    "savingsBuffer": 0.27,
+    "score": 0.899,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 80,
+    "income": 0.73,
+    "debtRatio": 0.1,
+    "savingsBuffer": 0.72,
+    "score": 0.9377,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 81,
+    "income": 0.66,
+    "debtRatio": 0.1,
+    "savingsBuffer": 0.55,
+    "score": 0.9341,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 82,
+    "income": 0.74,
+    "debtRatio": 0.01,
+    "savingsBuffer": 0.62,
+    "score": 0.9381,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 83,
+    "income": 0.55,
+    "debtRatio": 0.45,
+    "savingsBuffer": 0.44,
+    "score": 0.7399,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 84,
+    "income": 0.81,
+    "debtRatio": 0.3,
+    "savingsBuffer": 0.35,
+    "score": 0.8796,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 85,
+    "income": 0.4,
+    "debtRatio": 0.44,
+    "savingsBuffer": 0.47,
+    "score": 0.7208,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 86,
+    "income": 0.54,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.64,
+    "score": 0.9374,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 87,
+    "income": 0.36,
+    "debtRatio": 0.47,
+    "savingsBuffer": 0.31,
+    "score": 0.5692,
+    "decision": "Manual Review",
+    "actual": "Declined"
+  },
+  {
+    "id": 88,
+    "income": 0.63,
+    "debtRatio": 0.2,
+    "savingsBuffer": 0.87,
+    "score": 0.9372,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 89,
+    "income": 0.57,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.47,
+    "score": 0.935,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 90,
+    "income": 0.57,
+    "debtRatio": 0.37,
+    "savingsBuffer": 0.71,
+    "score": 0.9079,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 91,
+    "income": 0.75,
+    "debtRatio": 0.26,
+    "savingsBuffer": 0.25,
+    "score": 0.8512,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 92,
+    "income": 0.35,
+    "debtRatio": 0.38,
+    "savingsBuffer": 0.77,
+    "score": 0.8924,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 93,
+    "income": 0.63,
+    "debtRatio": 0.42,
+    "savingsBuffer": 0.65,
+    "score": 0.8864,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 94,
+    "income": 0.49,
+    "debtRatio": 0.25,
+    "savingsBuffer": 0.58,
+    "score": 0.9119,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 95,
+    "income": 0.68,
+    "debtRatio": 0.4,
+    "savingsBuffer": 0.23,
+    "score": 0.6992,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 96,
+    "income": 0.95,
+    "debtRatio": 0.1,
+    "savingsBuffer": 0.66,
+    "score": 0.9381,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 97,
+    "income": 0.79,
+    "debtRatio": 0.11,
+    "savingsBuffer": 0.37,
+    "score": 0.929,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 98,
+    "income": 0.78,
+    "debtRatio": 0.19,
+    "savingsBuffer": 0.31,
+    "score": 0.9096,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 99,
+    "income": 0.6,
+    "debtRatio": 0.21,
+    "savingsBuffer": 0.35,
+    "score": 0.8885,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 100,
+    "income": 0.78,
+    "debtRatio": 0.31,
+    "savingsBuffer": 0.47,
+    "score": 0.9014,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 101,
+    "income": 0.39,
+    "debtRatio": 0.2,
+    "savingsBuffer": 0.58,
+    "score": 0.9163,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 102,
+    "income": 0.29,
+    "debtRatio": 0.4,
+    "savingsBuffer": 0.09,
+    "score": 0.3882,
+    "decision": "Declined",
+    "actual": "Approved"
+  },
+  {
+    "id": 103,
+    "income": 0.69,
+    "debtRatio": 0.33,
+    "savingsBuffer": 0.56,
+    "score": 0.9032,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 104,
+    "income": 0.42,
+    "debtRatio": 0.49,
+    "savingsBuffer": 0.56,
+    "score": 0.7392,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 105,
+    "income": 0.6,
+    "debtRatio": 0.25,
+    "savingsBuffer": 0.43,
+    "score": 0.8937,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 106,
+    "income": 0.44,
+    "debtRatio": 0.25,
+    "savingsBuffer": 0.66,
+    "score": 0.918,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 107,
+    "income": 0.47,
+    "debtRatio": 0.29,
+    "savingsBuffer": 0.27,
+    "score": 0.7589,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 108,
+    "income": 0.31,
+    "debtRatio": 0.24,
+    "savingsBuffer": 0.19,
+    "score": 0.6743,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 109,
+    "income": 0.4,
+    "debtRatio": 0.61,
+    "savingsBuffer": 0.06,
+    "score": 0.322,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 110,
+    "income": 0.65,
+    "debtRatio": 0.04,
+    "savingsBuffer": 0.76,
+    "score": 0.9384,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 111,
+    "income": 0.48,
+    "debtRatio": 0.37,
+    "savingsBuffer": 0.16,
+    "score": 0.6244,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 112,
+    "income": 0.76,
+    "debtRatio": 0.35,
+    "savingsBuffer": 0.37,
+    "score": 0.8499,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 113,
+    "income": 0.75,
+    "debtRatio": 0.39,
+    "savingsBuffer": 0.71,
+    "score": 0.9202,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 114,
+    "income": 0.57,
+    "debtRatio": 0.48,
+    "savingsBuffer": 0.17,
+    "score": 0.5834,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 115,
+    "income": 0.5,
+    "debtRatio": 0.45,
+    "savingsBuffer": 0.46,
+    "score": 0.7392,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 116,
+    "income": 0.68,
+    "debtRatio": 0.12,
+    "savingsBuffer": 0.36,
+    "score": 0.9231,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 117,
+    "income": 0.83,
+    "debtRatio": 0.41,
+    "savingsBuffer": 0.3,
+    "score": 0.7787,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 118,
+    "income": 0.37,
+    "debtRatio": 0.15,
+    "savingsBuffer": 0.61,
+    "score": 0.9255,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 119,
+    "income": 0.57,
+    "debtRatio": 0.25,
+    "savingsBuffer": 0.23,
+    "score": 0.8007,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 120,
+    "income": 0.68,
+    "debtRatio": 0.79,
+    "savingsBuffer": 0.67,
+    "score": 0.6611,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 121,
+    "income": 0.64,
+    "debtRatio": 0.4,
+    "savingsBuffer": 0.89,
+    "score": 0.9279,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 122,
+    "income": 0.51,
+    "debtRatio": 0.13,
+    "savingsBuffer": 0.45,
+    "score": 0.9212,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 123,
+    "income": 0.48,
+    "debtRatio": 0.21,
+    "savingsBuffer": 0.21,
+    "score": 0.7909,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 124,
+    "income": 0.46,
+    "debtRatio": 0.25,
+    "savingsBuffer": 0.18,
+    "score": 0.7291,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 125,
+    "income": 0.91,
+    "debtRatio": 0.0,
+    "savingsBuffer": 1.0,
+    "score": 0.9397,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 126,
+    "income": 0.4,
+    "debtRatio": 0.3,
     "savingsBuffer": 0.39,
-    "score": 0.7655,
+    "score": 0.7883,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 127,
+    "income": 0.58,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.26,
+    "score": 0.9257,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 128,
+    "income": 0.65,
+    "debtRatio": 0.45,
+    "savingsBuffer": 0.57,
+    "score": 0.839,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 129,
+    "income": 0.59,
+    "debtRatio": 0.06,
+    "savingsBuffer": 0.85,
+    "score": 0.9386,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 130,
+    "income": 0.31,
+    "debtRatio": 0.36,
+    "savingsBuffer": 0.33,
+    "score": 0.6563,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 131,
+    "income": 0.4,
+    "debtRatio": 0.7,
+    "savingsBuffer": 0.71,
+    "score": 0.658,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 132,
+    "income": 0.61,
+    "debtRatio": 0.44,
+    "savingsBuffer": 0.68,
+    "score": 0.8773,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 133,
+    "income": 0.56,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.48,
+    "score": 0.9349,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 134,
+    "income": 0.48,
+    "debtRatio": 0.78,
+    "savingsBuffer": 0.11,
+    "score": 0.3137,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 135,
+    "income": 0.3,
+    "debtRatio": 0.16,
+    "savingsBuffer": 0.19,
+    "score": 0.7507,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 136,
+    "income": 0.81,
+    "debtRatio": 0.2,
+    "savingsBuffer": 0.47,
+    "score": 0.9279,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 137,
+    "income": 0.19,
+    "debtRatio": 0.51,
+    "savingsBuffer": 0.42,
+    "score": 0.3911,
+    "decision": "Declined",
+    "actual": "Approved"
+  },
+  {
+    "id": 138,
+    "income": 0.8,
+    "debtRatio": 0.15,
+    "savingsBuffer": 0.67,
+    "score": 0.9366,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 139,
+    "income": 0.6,
+    "debtRatio": 0.18,
+    "savingsBuffer": 0.42,
+    "score": 0.9152,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 140,
+    "income": 0.54,
+    "debtRatio": 0.22,
+    "savingsBuffer": 0.59,
+    "score": 0.9226,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 141,
+    "income": 0.62,
+    "debtRatio": 0.46,
+    "savingsBuffer": 0.23,
+    "score": 0.6417,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 142,
+    "income": 0.74,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.26,
+    "score": 0.6358,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 143,
+    "income": 0.86,
+    "debtRatio": 0.55,
+    "savingsBuffer": 0.37,
+    "score": 0.7076,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 144,
+    "income": 0.72,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.82,
+    "score": 0.9392,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 145,
+    "income": 0.26,
+    "debtRatio": 0.08,
+    "savingsBuffer": 0.0,
+    "score": 0.6734,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 146,
+    "income": 0.28,
+    "debtRatio": 0.43,
+    "savingsBuffer": 0.39,
+    "score": 0.6131,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 147,
+    "income": 0.8,
+    "debtRatio": 0.18,
+    "savingsBuffer": 0.76,
+    "score": 0.9372,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 148,
+    "income": 0.45,
+    "debtRatio": 0.35,
+    "savingsBuffer": 0.57,
+    "score": 0.8583,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 149,
+    "income": 0.72,
+    "debtRatio": 0.66,
+    "savingsBuffer": 0.49,
+    "score": 0.6627,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 150,
+    "income": 0.49,
+    "debtRatio": 0.44,
+    "savingsBuffer": 0.17,
+    "score": 0.5847,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 151,
+    "income": 0.76,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.63,
+    "score": 0.9383,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 152,
+    "income": 0.62,
+    "debtRatio": 0.3,
+    "savingsBuffer": 0.44,
+    "score": 0.8754,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 153,
+    "income": 0.87,
+    "debtRatio": 0.02,
+    "savingsBuffer": 0.63,
+    "score": 0.9385,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 154,
+    "income": 0.59,
+    "debtRatio": 0.26,
+    "savingsBuffer": 0.14,
+    "score": 0.7354,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 155,
+    "income": 0.83,
+    "debtRatio": 0.12,
+    "savingsBuffer": 0.87,
+    "score": 0.9389,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 156,
+    "income": 0.34,
+    "debtRatio": 0.39,
+    "savingsBuffer": 0.31,
+    "score": 0.6317,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 157,
+    "income": 0.73,
+    "debtRatio": 0.4,
+    "savingsBuffer": 0.51,
+    "score": 0.8625,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 158,
+    "income": 0.48,
+    "debtRatio": 0.09,
+    "savingsBuffer": 0.3,
+    "score": 0.9052,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 159,
+    "income": 0.62,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.38,
+    "score": 0.9328,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 160,
+    "income": 0.59,
+    "debtRatio": 0.19,
+    "savingsBuffer": 0.44,
+    "score": 0.9138,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 161,
+    "income": 0.43,
+    "debtRatio": 0.53,
+    "savingsBuffer": 0.22,
+    "score": 0.5249,
+    "decision": "Manual Review",
+    "actual": "Declined"
+  },
+  {
+    "id": 162,
+    "income": 0.75,
+    "debtRatio": 0.09,
+    "savingsBuffer": 0.47,
+    "score": 0.9336,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 163,
+    "income": 0.47,
+    "debtRatio": 0.18,
+    "savingsBuffer": 0.33,
+    "score": 0.8759,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 164,
+    "income": 0.37,
+    "debtRatio": 0.27,
+    "savingsBuffer": 0.44,
+    "score": 0.8373,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 165,
+    "income": 0.57,
+    "debtRatio": 0.28,
+    "savingsBuffer": 0.7,
+    "score": 0.9254,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 166,
+    "income": 0.38,
+    "debtRatio": 0.43,
+    "savingsBuffer": 0.72,
+    "score": 0.8563,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 167,
+    "income": 0.59,
+    "debtRatio": 0.06,
+    "savingsBuffer": 0.36,
+    "score": 0.9267,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 168,
+    "income": 0.64,
+    "debtRatio": 0.22,
+    "savingsBuffer": 0.74,
+    "score": 0.9339,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 169,
+    "income": 0.32,
+    "debtRatio": 0.34,
+    "savingsBuffer": 0.19,
+    "score": 0.5786,
+    "decision": "Manual Review",
+    "actual": "Approved"
+  },
+  {
+    "id": 170,
+    "income": 0.82,
+    "debtRatio": 0.41,
+    "savingsBuffer": 0.25,
+    "score": 0.7403,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 171,
+    "income": 0.58,
+    "debtRatio": 0.11,
+    "savingsBuffer": 0.45,
+    "score": 0.9267,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 172,
+    "income": 0.6,
+    "debtRatio": 0.31,
+    "savingsBuffer": 0.45,
+    "score": 0.8679,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 173,
+    "income": 0.55,
+    "debtRatio": 0.1,
+    "savingsBuffer": 0.37,
+    "score": 0.9187,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 174,
+    "income": 0.9,
+    "debtRatio": 0.28,
+    "savingsBuffer": 1.0,
+    "score": 0.9385,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 175,
+    "income": 0.68,
+    "debtRatio": 0.37,
+    "savingsBuffer": 0.74,
+    "score": 0.9215,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 176,
+    "income": 0.67,
+    "debtRatio": 0.54,
+    "savingsBuffer": 0.24,
+    "score": 0.6092,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 177,
+    "income": 0.28,
+    "debtRatio": 0.38,
+    "savingsBuffer": 0.49,
+    "score": 0.7348,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 178,
+    "income": 0.88,
+    "debtRatio": 0.07,
+    "savingsBuffer": 0.67,
+    "score": 0.9383,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 179,
+    "income": 0.14,
+    "debtRatio": 0.18,
+    "savingsBuffer": 0.0,
+    "score": 0.2835,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 180,
+    "income": 0.28,
+    "debtRatio": 0.14,
+    "savingsBuffer": 0.26,
+    "score": 0.8119,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 181,
+    "income": 0.15,
+    "debtRatio": 0.11,
+    "savingsBuffer": 0.07,
+    "score": 0.5412,
+    "decision": "Manual Review",
+    "actual": "Approved"
+  },
+  {
+    "id": 182,
+    "income": 0.24,
+    "debtRatio": 0.05,
+    "savingsBuffer": 0.32,
+    "score": 0.8916,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 183,
+    "income": 0.72,
+    "debtRatio": 0.49,
+    "savingsBuffer": 0.58,
+    "score": 0.8325,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
+    "id": 184,
+    "income": 0.81,
+    "debtRatio": 0.48,
+    "savingsBuffer": 1.0,
+    "score": 0.9324,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 185,
+    "income": 0.52,
+    "debtRatio": 0.29,
+    "savingsBuffer": 0.61,
+    "score": 0.9087,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 186,
+    "income": 0.27,
+    "debtRatio": 0.38,
+    "savingsBuffer": 0.43,
+    "score": 0.6876,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 187,
-    "income": 0.45,
-    "debtRatio": 0.62,
-    "savingsBuffer": 0.18,
-    "score": 0.3615,
-    "decision": "Declined",
-    "actual": "Declined"
+    "income": 0.89,
+    "debtRatio": 0.2,
+    "savingsBuffer": 0.71,
+    "score": 0.9369,
+    "decision": "Approved",
+    "actual": "Approved"
   },
   {
     "id": 188,
-    "income": 0.27,
-    "debtRatio": 0.24,
-    "savingsBuffer": 0.18,
-    "score": 0.5932,
+    "income": 0.52,
+    "debtRatio": 0.22,
+    "savingsBuffer": 0.32,
+    "score": 0.8551,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 189,
-    "income": 0.45,
-    "debtRatio": 0.1,
-    "savingsBuffer": 0.48,
-    "score": 0.8247,
-    "decision": "Approved",
-    "actual": "Approved"
+    "income": 0.3,
+    "debtRatio": 0.35,
+    "savingsBuffer": 0.1,
+    "score": 0.4604,
+    "decision": "Declined",
+    "actual": "Declined"
   },
   {
     "id": 190,
-    "income": 0.94,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.54,
-    "score": 0.8604,
+    "income": 0.46,
+    "debtRatio": 0.22,
+    "savingsBuffer": 0.51,
+    "score": 0.9042,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 191,
-    "income": 0.58,
-    "debtRatio": 0.13,
-    "savingsBuffer": 0.72,
-    "score": 0.853,
+    "income": 0.64,
+    "debtRatio": 0.45,
+    "savingsBuffer": 0.37,
+    "score": 0.7279,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 192,
-    "income": 0.72,
-    "debtRatio": 0.52,
+    "income": 0.82,
+    "debtRatio": 0.03,
     "savingsBuffer": 0.47,
-    "score": 0.6751,
+    "score": 0.9364,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 193,
-    "income": 0.38,
-    "debtRatio": 0.39,
-    "savingsBuffer": 0.45,
-    "score": 0.5904,
+    "income": 0.31,
+    "debtRatio": 0.34,
+    "savingsBuffer": 0.36,
+    "score": 0.7004,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 194,
-    "income": 0.68,
-    "debtRatio": 0.27,
-    "savingsBuffer": 0.42,
-    "score": 0.7998,
+    "income": 0.51,
+    "debtRatio": 0.44,
+    "savingsBuffer": 0.48,
+    "score": 0.7673,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 195,
-    "income": 0.78,
-    "debtRatio": 0.29,
-    "savingsBuffer": 0.34,
-    "score": 0.7849,
+    "income": 0.47,
+    "debtRatio": 0.32,
+    "savingsBuffer": 0.3,
+    "score": 0.7503,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 196,
-    "income": 0.68,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.03,
-    "score": 0.6304,
-    "decision": "Approved",
+    "income": 0.14,
+    "debtRatio": 0.46,
+    "savingsBuffer": 0.2,
+    "score": 0.157,
+    "decision": "Declined",
     "actual": "Approved"
   },
   {
     "id": 197,
-    "income": 0.53,
-    "debtRatio": 0.29,
-    "savingsBuffer": 0.42,
-    "score": 0.7552,
+    "income": 0.87,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.64,
+    "score": 0.9386,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 198,
-    "income": 0.65,
-    "debtRatio": 0.27,
-    "savingsBuffer": 0.39,
-    "score": 0.7862,
+    "income": 0.63,
+    "debtRatio": 0.07,
+    "savingsBuffer": 0.35,
+    "score": 0.9253,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 199,
-    "income": 0.18,
-    "debtRatio": 0.62,
-    "savingsBuffer": 0.05,
-    "score": 0.3189,
-    "decision": "Declined",
-    "actual": "Declined"
-  },
-  {
-    "id": 200,
-    "income": 0.69,
-    "debtRatio": 0.1,
-    "savingsBuffer": 0.65,
-    "score": 0.8557,
+    "income": 0.43,
+    "debtRatio": 0.32,
+    "savingsBuffer": 0.11,
+    "score": 0.6049,
     "decision": "Approved",
     "actual": "Declined"
   },
   {
+    "id": 200,
+    "income": 0.87,
+    "debtRatio": 0.09,
+    "savingsBuffer": 0.41,
+    "score": 0.9337,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
     "id": 201,
-    "income": 0.32,
-    "debtRatio": 0.63,
-    "savingsBuffer": 0.02,
-    "score": 0.3311,
-    "decision": "Declined",
+    "income": 0.59,
+    "debtRatio": 0.23,
+    "savingsBuffer": 0.36,
+    "score": 0.8802,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 202,
-    "income": 0.75,
-    "debtRatio": 0.32,
-    "savingsBuffer": 0.28,
-    "score": 0.7407,
+    "income": 0.81,
+    "debtRatio": 0.74,
+    "savingsBuffer": 0.48,
+    "score": 0.6328,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 203,
-    "income": 0.97,
-    "debtRatio": 0.35,
-    "savingsBuffer": 0.79,
-    "score": 0.8558,
+    "income": 0.53,
+    "debtRatio": 0.12,
+    "savingsBuffer": 0.92,
+    "score": 0.9384,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 204,
-    "income": 0.48,
-    "debtRatio": 0.24,
-    "savingsBuffer": 0.41,
-    "score": 0.763,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 205,
-    "income": 0.26,
-    "debtRatio": 0.49,
-    "savingsBuffer": 0.29,
-    "score": 0.3836,
+    "income": 0.19,
+    "debtRatio": 0.81,
+    "savingsBuffer": 0.07,
+    "score": 0.0704,
     "decision": "Declined",
     "actual": "Declined"
   },
   {
-    "id": 206,
-    "income": 0.54,
-    "debtRatio": 0.29,
-    "savingsBuffer": 0.51,
-    "score": 0.7908,
+    "id": 205,
+    "income": 0.8,
+    "debtRatio": 0.35,
+    "savingsBuffer": 0.44,
+    "score": 0.8812,
     "decision": "Approved",
     "actual": "Approved"
+  },
+  {
+    "id": 206,
+    "income": 0.3,
+    "debtRatio": 0.52,
+    "savingsBuffer": 0.59,
+    "score": 0.6833,
+    "decision": "Approved",
+    "actual": "Declined"
   },
   {
     "id": 207,
-    "income": 0.9,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.63,
-    "score": 0.8547,
+    "income": 0.22,
+    "debtRatio": 0.31,
+    "savingsBuffer": 0.46,
+    "score": 0.7491,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 208,
-    "income": 0.61,
-    "debtRatio": 0.18,
-    "savingsBuffer": 0.66,
-    "score": 0.8482,
+    "income": 0.49,
+    "debtRatio": 0.54,
+    "savingsBuffer": 0.35,
+    "score": 0.616,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 209,
-    "income": 0.49,
-    "debtRatio": 0.34,
-    "savingsBuffer": 0.22,
-    "score": 0.6193,
+    "income": 0.89,
+    "debtRatio": 0.29,
+    "savingsBuffer": 0.79,
+    "score": 0.936,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 210,
-    "income": 0.48,
-    "debtRatio": 0.42,
-    "savingsBuffer": 0.68,
-    "score": 0.7361,
+    "income": 0.58,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.25,
+    "score": 0.9242,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 211,
-    "income": 0.63,
-    "debtRatio": 0.18,
-    "savingsBuffer": 0.22,
-    "score": 0.7462,
+    "income": 0.49,
+    "debtRatio": 0.37,
+    "savingsBuffer": 0.33,
+    "score": 0.7284,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 212,
+    "income": 0.69,
+    "debtRatio": 0.16,
+    "savingsBuffer": 0.0,
+    "score": 0.7862,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
-    "id": 212,
-    "income": 0.72,
-    "debtRatio": 0.61,
-    "savingsBuffer": 0.33,
-    "score": 0.4948,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
     "id": 213,
-    "income": 0.45,
-    "debtRatio": 0.54,
-    "savingsBuffer": 0.65,
-    "score": 0.5294,
-    "decision": "Manual Review",
+    "income": 0.71,
+    "debtRatio": 0.57,
+    "savingsBuffer": 0.36,
+    "score": 0.6538,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 214,
-    "income": 0.42,
-    "debtRatio": 0.57,
-    "savingsBuffer": 0.6,
-    "score": 0.4591,
-    "decision": "Declined",
-    "actual": "Declined"
+    "income": 0.43,
+    "debtRatio": 0.56,
+    "savingsBuffer": 0.69,
+    "score": 0.7527,
+    "decision": "Approved",
+    "actual": "Approved"
   },
   {
     "id": 215,
-    "income": 0.88,
-    "debtRatio": 0.07,
-    "savingsBuffer": 0.75,
-    "score": 0.862,
+    "income": 0.45,
+    "debtRatio": 0.36,
+    "savingsBuffer": 0.65,
+    "score": 0.883,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 216,
-    "income": 0.77,
-    "debtRatio": 0.31,
-    "savingsBuffer": 0.78,
-    "score": 0.8507,
+    "income": 0.71,
+    "debtRatio": 0.24,
+    "savingsBuffer": 0.66,
+    "score": 0.9309,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 217,
-    "income": 0.58,
-    "debtRatio": 0.11,
-    "savingsBuffer": 0.66,
-    "score": 0.8522,
+    "income": 0.67,
+    "debtRatio": 0.19,
+    "savingsBuffer": 0.4,
+    "score": 0.9136,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 218,
-    "income": 0.58,
-    "debtRatio": 0.07,
-    "savingsBuffer": 0.31,
-    "score": 0.8075,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 219,
-    "income": 0.33,
-    "debtRatio": 0.38,
-    "savingsBuffer": 0.38,
-    "score": 0.5526,
+    "income": 0.62,
+    "debtRatio": 0.68,
+    "savingsBuffer": 0.34,
+    "score": 0.5734,
     "decision": "Manual Review",
     "actual": "Declined"
   },
   {
+    "id": 219,
+    "income": 0.42,
+    "debtRatio": 0.48,
+    "savingsBuffer": 0.16,
+    "score": 0.5216,
+    "decision": "Manual Review",
+    "actual": "Approved"
+  },
+  {
     "id": 220,
-    "income": 0.68,
-    "debtRatio": 0.52,
-    "savingsBuffer": 0.59,
-    "score": 0.7149,
+    "income": 0.66,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.67,
+    "score": 0.9383,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 221,
-    "income": 0.7,
-    "debtRatio": 0.01,
-    "savingsBuffer": 0.44,
-    "score": 0.849,
+    "income": 0.93,
+    "debtRatio": 0.3,
+    "savingsBuffer": 0.51,
+    "score": 0.9236,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 222,
-    "income": 0.88,
-    "debtRatio": 0.39,
-    "savingsBuffer": 0.69,
-    "score": 0.8428,
-    "decision": "Approved",
-    "actual": "Approved"
+    "income": 0.19,
+    "debtRatio": 0.7,
+    "savingsBuffer": 0.32,
+    "score": 0.1169,
+    "decision": "Declined",
+    "actual": "Declined"
   },
   {
     "id": 223,
-    "income": 0.54,
-    "debtRatio": 0.41,
-    "savingsBuffer": 0.64,
-    "score": 0.7666,
+    "income": 0.38,
+    "debtRatio": 0.28,
+    "savingsBuffer": 0.3,
+    "score": 0.7488,
     "decision": "Approved",
-    "actual": "Approved"
+    "actual": "Declined"
   },
   {
     "id": 224,
-    "income": 0.57,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.36,
-    "score": 0.6983,
+    "income": 0.77,
+    "debtRatio": 0.17,
+    "savingsBuffer": 0.23,
+    "score": 0.898,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 225,
-    "income": 0.6,
-    "debtRatio": 0.42,
-    "savingsBuffer": 0.36,
-    "score": 0.6638,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 226,
-    "income": 0.57,
-    "debtRatio": 0.21,
-    "savingsBuffer": 0.33,
-    "score": 0.7693,
+    "income": 0.45,
+    "debtRatio": 0.2,
+    "savingsBuffer": 0.57,
+    "score": 0.9187,
     "decision": "Approved",
     "actual": "Declined"
   },
   {
+    "id": 226,
+    "income": 0.47,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.59,
+    "score": 0.9364,
+    "decision": "Approved",
+    "actual": "Approved"
+  },
+  {
     "id": 227,
-    "income": 0.76,
-    "debtRatio": 0.23,
-    "savingsBuffer": 0.75,
-    "score": 0.8546,
+    "income": 0.51,
+    "debtRatio": 0.32,
+    "savingsBuffer": 0.51,
+    "score": 0.8685,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 228,
-    "income": 0.68,
-    "debtRatio": 0.51,
-    "savingsBuffer": 0.72,
-    "score": 0.7546,
+    "income": 0.57,
+    "debtRatio": 0.0,
+    "savingsBuffer": 0.47,
+    "score": 0.9347,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 229,
-    "income": 0.72,
-    "debtRatio": 0.37,
-    "savingsBuffer": 0.27,
-    "score": 0.7016,
+    "income": 0.43,
+    "debtRatio": 0.23,
+    "savingsBuffer": 0.26,
+    "score": 0.7933,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 230,
-    "income": 0.85,
-    "debtRatio": 0.36,
-    "savingsBuffer": 0.38,
-    "score": 0.7895,
+    "income": 0.75,
+    "debtRatio": 0.3,
+    "savingsBuffer": 0.59,
+    "score": 0.9213,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 231,
-    "income": 0.3,
-    "debtRatio": 0.3,
-    "savingsBuffer": 0.28,
-    "score": 0.5894,
+    "income": 0.51,
+    "debtRatio": 0.42,
+    "savingsBuffer": 0.33,
+    "score": 0.6897,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 232,
-    "income": 0.31,
-    "debtRatio": 0.0,
-    "savingsBuffer": 0.17,
-    "score": 0.7237,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 233,
-    "income": 0.73,
-    "debtRatio": 0.33,
-    "savingsBuffer": 0.69,
-    "score": 0.841,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 234,
-    "income": 0.78,
-    "debtRatio": 0.15,
-    "savingsBuffer": 0.65,
-    "score": 0.8558,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 235,
-    "income": 0.69,
-    "debtRatio": 0.0,
-    "savingsBuffer": 1.0,
-    "score": 0.8636,
-    "decision": "Approved",
-    "actual": "Approved"
-  },
-  {
-    "id": 236,
-    "income": 0.2,
-    "debtRatio": 0.41,
-    "savingsBuffer": 0.67,
-    "score": 0.542,
-    "decision": "Manual Review",
-    "actual": "Approved"
-  },
-  {
-    "id": 237,
-    "income": 0.29,
-    "debtRatio": 0.61,
-    "savingsBuffer": 0.2,
-    "score": 0.3392,
+    "income": 0.16,
+    "debtRatio": 0.55,
+    "savingsBuffer": 0.21,
+    "score": 0.1198,
     "decision": "Declined",
     "actual": "Declined"
   },
   {
+    "id": 233,
+    "income": 0.34,
+    "debtRatio": 0.61,
+    "savingsBuffer": 0.41,
+    "score": 0.5086,
+    "decision": "Manual Review",
+    "actual": "Approved"
+  },
+  {
+    "id": 234,
+    "income": 0.62,
+    "debtRatio": 0.19,
+    "savingsBuffer": 0.38,
+    "score": 0.9054,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 235,
+    "income": 0.59,
+    "debtRatio": 0.31,
+    "savingsBuffer": 0.61,
+    "score": 0.9107,
+    "decision": "Approved",
+    "actual": "Declined"
+  },
+  {
+    "id": 236,
+    "income": 0.26,
+    "debtRatio": 0.42,
+    "savingsBuffer": 0.2,
+    "score": 0.4283,
+    "decision": "Declined",
+    "actual": "Declined"
+  },
+  {
+    "id": 237,
+    "income": 0.37,
+    "debtRatio": 0.44,
+    "savingsBuffer": 0.17,
+    "score": 0.5142,
+    "decision": "Manual Review",
+    "actual": "Declined"
+  },
+  {
     "id": 238,
-    "income": 0.89,
-    "debtRatio": 0.09,
-    "savingsBuffer": 0.51,
-    "score": 0.8553,
+    "income": 0.4,
+    "debtRatio": 0.22,
+    "savingsBuffer": 0.62,
+    "score": 0.9168,
     "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 239,
-    "income": 0.42,
-    "debtRatio": 0.47,
-    "savingsBuffer": 0.16,
-    "score": 0.4564,
-    "decision": "Declined",
+    "income": 0.59,
+    "debtRatio": 0.06,
+    "savingsBuffer": 0.44,
+    "score": 0.9309,
+    "decision": "Approved",
     "actual": "Approved"
   },
   {
     "id": 240,
-    "income": 0.74,
-    "debtRatio": 0.42,
-    "savingsBuffer": 0.56,
-    "score": 0.7977,
-    "decision": "Approved",
-    "actual": "Approved"
+    "income": 0.35,
+    "debtRatio": 0.92,
+    "savingsBuffer": 0.54,
+    "score": 0.3159,
+    "decision": "Declined",
+    "actual": "Declined"
   }
 ]
