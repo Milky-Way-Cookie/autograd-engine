@@ -350,8 +350,17 @@ def explain():
             }
         )
 
-    except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+    except Exception:
+        logging.exception("Error while generating explanation")
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": "An internal error occurred while generating the explanation.",
+                }
+            ),
+            500,
+        )
 
 
 @app.route("/api/parse-description", methods=["POST"])
