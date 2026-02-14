@@ -1,13 +1,13 @@
 # Credit Risk Pipeline Summary
 
-Run timestamp (UTC): 2026-02-14 05:46:45
+Run timestamp (UTC): 2026-02-14 06:35:22
 
 ## Dataset
 - Total records: 1200
 - Train split: 960
 - Eval split: 240
-- Approval rate: 0.747
-- Seed: 7479
+- Approval rate: 0.714
+- Seed: 2239
 
 ## Model
 - Architecture: MLP (3x4x4x1)
@@ -16,18 +16,18 @@ Run timestamp (UTC): 2026-02-14 05:46:45
 - Decision thresholds: approve >= 0.58, manual review >= 0.48
 
 ## Evaluation
-- AUC: 0.775
-- KS: 0.422
-- Precision: 0.828
-- Recall: 0.914
-- F1: 0.869
-- Accuracy: 0.787
+- AUC: 0.722
+- KS: 0.383
+- Precision: 0.748
+- Recall: 0.970
+- F1: 0.845
+- Accuracy: 0.750
 
 ## Confusion Matrix
-- TP: 169
-- TN: 20
-- FP: 35
-- FN: 16
+- TP: 163
+- TN: 17
+- FP: 55
+- FN: 5
 
 ## Notes
 - Data is synthetic but structured to mimic real-world credit drivers.

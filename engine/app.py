@@ -8,6 +8,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 from nn import MLP
+from value import Value
 from pipeline import (
     FEATURES,
     OUTPUT_DIR,
@@ -31,7 +32,6 @@ AUDIT_PATH = OUTPUT_DIR / "audit_report.json"
 
 
 def load_model_weights():
-    """Load trained weights from model.json."""
     if not MODEL_PATH.exists():
         return None
     try:
@@ -187,6 +187,40 @@ def parse_applicant_description(description):
     }
 
 
+def compute_feature_contributions(weights, income, debt_ratio, savings_buffer):
+    if not weights or len(weights) < 12:
+        return None
+    
+    feature_values = [income, debt_ratio, savings_buffer]
+    feature_impacts = [0.0, 0.0, 0.0]
+    
+    # First layer: 3 inputs -> 4 neurons = 12 weights
+    # Organized as: [w0->n0, w0->n1, w0->n2, w0->n3, w1->n0, w1->n1, w1->n2, w1->n3, w2->n0, w2->n1, w2->n2, w2->n3]
+    first_layer_weights = weights[:12]
+    
+    # For each input feature, sum absolute weights connecting it to all hidden neurons
+    for input_idx in range(3):
+        start_idx = input_idx * 4
+        end_idx = start_idx + 4
+        for weight_idx in range(start_idx, end_idx):
+            feature_impacts[input_idx] += abs(first_layer_weights[weight_idx])
+    
+    total_impact = sum(feature_impacts)
+    if total_impact == 0:
+        total_impact = 1
+    
+    contributions = []
+    for i, name in enumerate(FEATURES):
+        impact_pct = (feature_impacts[i] / total_impact) * 100
+        contributions.append({
+            "feature": name,
+            "impact_percentage": round(impact_pct, 1),
+            "value": round(feature_values[i], 3),
+        })
+    
+    return sorted(contributions, key=lambda x: x["impact_percentage"], reverse=True)
+
+
 @app.route("/api/status", methods=["GET"])
 def status():
     """Return current model status."""
@@ -291,6 +325,33 @@ def infer():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 
+@app.route("/api/explain", methods=["POST"])
+def explain():
+    try:
+        payload = request.get_json() or {}
+        income = float(payload.get("income", 0.5))
+        debt_ratio = float(payload.get("debtRatio", 0.5))
+        savings_buffer = float(payload.get("savingsBuffer", 0.5))
+
+        weights = load_model_weights()
+        if not weights:
+            return jsonify({"status": "error", "message": "No model loaded"}), 400
+
+        contributions = compute_feature_contributions(weights, income, debt_ratio, savings_buffer)
+        if not contributions:
+            return jsonify({"status": "error", "message": "Could not compute explanation"}), 500
+
+        return jsonify(
+            {
+                "status": "success",
+                "contributions": contributions,
+            }
+        )
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
 @app.route("/api/parse-description", methods=["POST"])
 def parse_description():
     """Parse a natural language description into features."""
@@ -329,6 +390,41 @@ def get_model_data():
             "audit": load_audit_report(),
         }
     )
+
+
+@app.route("/api/confusion-matrix", methods=["GET"])
+def get_confusion_matrix():
+    try:
+        metrics = load_metrics()
+        cm = metrics.get("confusion", {})
+        
+        tp = cm.get("tp", 0)
+        tn = cm.get("tn", 0)
+        fp = cm.get("fp", 0)
+        fn = cm.get("fn", 0)
+        total = tp + tn + fp + fn
+        
+        accuracy = (tp + tn) / total if total > 0 else 0
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        specificity = tn / (tn + fp) if (tn + fp) > 0 else 0
+        
+        return jsonify({
+            "status": "success",
+            "confusion_matrix": {
+                "tp": tp,
+                "tn": tn,
+                "fp": fp,
+                "fn": fn,
+                "total": total,
+                "accuracy": round(accuracy, 4),
+                "precision": round(precision, 4),
+                "recall": round(recall, 4),
+                "specificity": round(specificity, 4)
+            }
+        })
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 if __name__ == "__main__":
