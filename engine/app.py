@@ -323,8 +323,17 @@ def infer():
             }
         )
 
-    except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+    except Exception:
+        logging.exception("Error while running inference")
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": "An internal error occurred while running inference.",
+                }
+            ),
+            500,
+        )
 
 
 @app.route("/api/explain", methods=["POST"])
