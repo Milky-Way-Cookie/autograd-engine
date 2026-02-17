@@ -1,6 +1,7 @@
 import argparse
 import json
 import math
+import os
 import random
 from datetime import datetime
 from pathlib import Path
@@ -9,7 +10,12 @@ from nn import MLP
 
 
 FEATURES = ["income", "debtRatio", "savingsBuffer"]
-OUTPUT_DIR = Path(__file__).resolve().parent.parent / "visualizer" / "src"
+OUTPUT_DIR = Path(
+    os.getenv(
+        "MODEL_OUTPUT_DIR",
+        Path(__file__).resolve().parent.parent / "visualizer" / "src",
+    )
+)
 REPORT_DIR = Path(__file__).resolve().parent / "reports"
 
 
