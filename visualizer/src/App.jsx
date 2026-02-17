@@ -32,6 +32,7 @@ function App() {
   const [training, setTraining] = useState(false);
   const [trainingJobId, setTrainingJobId] = useState(null);
   const [trainingStatus, setTrainingStatus] = useState(null);
+  const [trainingProgress, setTrainingProgress] = useState({ current: 0, total: 0, percentage: 0 });
   const [description, setDescription] = useState('');
   const [parseError, setParseError] = useState(null);
   const [explanations, setExplanations] = useState([]);
@@ -155,6 +156,15 @@ function App() {
           }
 
           setTrainingStatus(statusData.status);
+
+          // Update progress if available
+          if (statusData.progress) {
+            setTrainingProgress({
+              current: statusData.progress.current_epoch,
+              total: statusData.progress.total_epochs,
+              percentage: statusData.progress.percentage,
+            });
+          }
 
           if (statusData.status === 'success') {
             // Training complete!
@@ -304,12 +314,24 @@ function App() {
                 {training ? (
                   <span className="flex items-center justify-center gap-2">
                     <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                    Training... ({trainingStatus || 'loading'})
+                    {trainingProgress.total > 0
+                      ? `Training... ${trainingProgress.current}/${trainingProgress.total} (${trainingProgress.percentage}%)`
+                      : `Training... (${trainingStatus || 'loading'})`}
                   </span>
                 ) : (
                   'Train New Model'
                 )}
               </button>
+              {training && trainingProgress.total > 0 && (
+                <div className="mt-3 w-full">
+                  <div className="h-2 w-full rounded-full bg-slate-800">
+                    <div
+                      className="h-full rounded-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300"
+                      style={{ width: `${trainingProgress.percentage}%` }}
+                    />
+                  </div>
+                </div>
+              )}
               <p className="mt-3 text-xs text-slate-400">Generates new synthetic data and trains from scratch.</p>
               {trainingJobId && (
                 <p className="mt-2 text-xs text-slate-500">Job ID: {trainingJobId.substring(0, 8)}...</p>

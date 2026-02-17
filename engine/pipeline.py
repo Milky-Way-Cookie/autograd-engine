@@ -65,7 +65,7 @@ def compute_approval_rate(records):
     return sum(1 for record in records if record["approved"]) / max(1, len(records))
 
 
-def train_model(model, train_records, epochs=220, learning_rate=0.03, verbose=True):
+def train_model(model, train_records, epochs=220, learning_rate=0.03, verbose=True, progress_callback=None):
     log_interval = max(1, epochs // 5)
     for epoch in range(epochs):
         total_loss = 0.0
@@ -87,6 +87,10 @@ def train_model(model, train_records, epochs=220, learning_rate=0.03, verbose=Tr
         if verbose and epoch % log_interval == 0:
             avg_loss = total_loss / max(1, len(train_records))
             print(f"Epoch {epoch:03d} | avg loss {avg_loss:.4f}")
+        
+        # Call progress callback if provided
+        if progress_callback:
+            progress_callback(epoch + 1, epochs)
 
 
 def compute_metrics(scores, labels):

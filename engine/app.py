@@ -97,6 +97,7 @@ def run_training_worker(job_id, dataset_size, epochs, learning_rate, seed, train
         with jobs_lock:
             training_jobs[job_id]["status"] = "running"
             training_jobs[job_id]["started_at"] = datetime.now().isoformat()
+            training_jobs[job_id]["progress"] = {"current_epoch": 0, "total_epochs": epochs}
 
         records = generate_applicants(dataset_size, seed=seed)
         train_records, eval_records = split_dataset(
@@ -105,7 +106,17 @@ def run_training_worker(job_id, dataset_size, epochs, learning_rate, seed, train
         approval_rate = compute_approval_rate(records)
 
         model = MLP(3, [4, 4, 1])
-        train_model(model, train_records, epochs=epochs, learning_rate=learning_rate, verbose=False)
+        
+        # Define progress callback
+        def progress_callback(current_epoch, total_epochs):
+            with jobs_lock:
+                if job_id in training_jobs:
+                    training_jobs[job_id]["progress"] = {
+                        "current_epoch": current_epoch,
+                        "total_epochs": total_epochs,
+                    }
+        
+        train_model(model, train_records, epochs=epochs, learning_rate=learning_rate, verbose=False, progress_callback=progress_callback)
 
         scores = score_records(model, eval_records)
         labels = [1 if record["approved"] else 0 for record in eval_records]
@@ -367,7 +378,17 @@ def train_status(job_id):
                 "completed_at": job.get("completed_at"),
             }
 
-            if job["status"] == "success":
+            if job["status"] == "running" and "progress" in job:
+                progress = job.get("progress", {})
+                current = progress.get("current_epoch", 0)
+                total = progress.get("total_epochs", 1)
+                percentage = int((current / total) * 100) if total > 0 else 0
+                response["progress"] = {
+                    "current_epoch": current,
+                    "total_epochs": total,
+                    "percentage": percentage,
+                }
+            elif job["status"] == "success":
                 response["result"] = job.get("result")
             elif job["status"] == "error":
                 response["error"] = job.get("error")
