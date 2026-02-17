@@ -5,6 +5,9 @@ import sys
 from pathlib import Path
 import os
 import logging
+import threading
+import uuid
+from datetime import datetime
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -26,6 +29,10 @@ from pipeline import (
 
 app = Flask(__name__)
 CORS(app)
+
+# Global job storage for async training
+training_jobs = {}
+jobs_lock = threading.Lock()
 
 MODEL_PATH = OUTPUT_DIR / "model.json"
 METRICS_PATH = OUTPUT_DIR / "model_metrics.json"
@@ -82,6 +89,51 @@ def reconstruct_model_from_weights(weights):
     for param, weight in zip(params, weights):
         param.data = weight
     return model
+
+
+def run_training_worker(job_id, dataset_size, epochs, learning_rate, seed, train_ratio):
+    """Worker function to run training in a background thread."""
+    try:
+        with jobs_lock:
+            training_jobs[job_id]["status"] = "running"
+            training_jobs[job_id]["started_at"] = datetime.now().isoformat()
+
+        records = generate_applicants(dataset_size, seed=seed)
+        train_records, eval_records = split_dataset(
+            records, train_ratio=train_ratio, seed=seed
+        )
+        approval_rate = compute_approval_rate(records)
+
+        model = MLP(3, [4, 4, 1])
+        train_model(model, train_records, epochs=epochs, learning_rate=learning_rate, verbose=False)
+
+        scores = score_records(model, eval_records)
+        labels = [1 if record["approved"] else 0 for record in eval_records]
+        metrics = compute_metrics(scores, labels)
+
+        export_artifacts(model, train_records, eval_records, metrics, seed, approval_rate)
+        export_reports(metrics, train_records, eval_records, seed, approval_rate)
+
+        new_metrics = load_metrics()
+        new_card = load_model_card()
+        audit = load_audit_report()
+
+        with jobs_lock:
+            training_jobs[job_id]["status"] = "success"
+            training_jobs[job_id]["completed_at"] = datetime.now().isoformat()
+            training_jobs[job_id]["result"] = {
+                "message": f"Training complete. AUC: {metrics['auc']:.3f}",
+                "metrics": new_metrics,
+                "card": new_card,
+                "audit_sample": audit[:5],
+            }
+
+    except Exception as e:
+        logging.exception(f"Error in training worker for job {job_id}")
+        with jobs_lock:
+            training_jobs[job_id]["status"] = "error"
+            training_jobs[job_id]["completed_at"] = datetime.now().isoformat()
+            training_jobs[job_id]["error"] = str(e)
 
 
 def parse_applicant_description(description):
@@ -240,7 +292,7 @@ def status():
 
 @app.route("/api/train", methods=["POST"])
 def train():
-    """Train a new model with specified parameters."""
+    """Queue a new model training job and return immediately with job_id."""
     try:
         payload = request.get_json() or {}
         dataset_size = payload.get("dataset_size", 1200)
@@ -249,43 +301,86 @@ def train():
         seed = payload.get("seed", 7)
         train_ratio = payload.get("train_ratio", 0.8)
 
-        records = generate_applicants(dataset_size, seed=seed)
-        train_records, eval_records = split_dataset(
-            records, train_ratio=train_ratio, seed=seed
+        # Create a new job
+        job_id = str(uuid.uuid4())
+        
+        with jobs_lock:
+            training_jobs[job_id] = {
+                "status": "queued",
+                "created_at": datetime.now().isoformat(),
+                "params": {
+                    "dataset_size": dataset_size,
+                    "epochs": epochs,
+                    "learning_rate": learning_rate,
+                    "seed": seed,
+                    "train_ratio": train_ratio,
+                },
+            }
+
+        # Start training in background thread
+        thread = threading.Thread(
+            target=run_training_worker,
+            args=(job_id, dataset_size, epochs, learning_rate, seed, train_ratio),
+            daemon=True,
         )
-        approval_rate = compute_approval_rate(records)
-
-        model = MLP(3, [4, 4, 1])
-        train_model(model, train_records, epochs=epochs, learning_rate=learning_rate, verbose=False)
-
-        scores = score_records(model, eval_records)
-        labels = [1 if record["approved"] else 0 for record in eval_records]
-        metrics = compute_metrics(scores, labels)
-
-        export_artifacts(model, train_records, eval_records, metrics, seed, approval_rate)
-        export_reports(metrics, train_records, eval_records, seed, approval_rate)
-
-        new_metrics = load_metrics()
-        new_card = load_model_card()
-        audit = load_audit_report()
+        thread.start()
 
         return jsonify(
             {
-                "status": "success",
-                "message": f"Training complete. AUC: {metrics['auc']:.3f}",
-                "metrics": new_metrics,
-                "card": new_card,
-                "audit_sample": audit[:5],
+                "status": "queued",
+                "job_id": job_id,
+                "message": "Training job queued.",
             }
-        )
+        ), 202
 
     except Exception:
-        logging.exception("Error while training model")
+        logging.exception("Error while queueing training job")
         return (
             jsonify(
                 {
                     "status": "error",
-                    "message": "An internal error occurred while training the model.",
+                    "message": "An internal error occurred while queueing the training job.",
+                }
+            ),
+            500,
+        )
+
+
+@app.route("/api/train-status/<job_id>", methods=["GET"])
+def train_status(job_id):
+    """Check the status of a training job."""
+    try:
+        with jobs_lock:
+            if job_id not in training_jobs:
+                return jsonify(
+                    {
+                        "status": "error",
+                        "message": "Job not found.",
+                    }
+                ), 404
+
+            job = training_jobs[job_id]
+            response = {
+                "status": job["status"],
+                "created_at": job.get("created_at"),
+                "started_at": job.get("started_at"),
+                "completed_at": job.get("completed_at"),
+            }
+
+            if job["status"] == "success":
+                response["result"] = job.get("result")
+            elif job["status"] == "error":
+                response["error"] = job.get("error")
+
+            return jsonify(response)
+
+    except Exception:
+        logging.exception(f"Error while checking training job status {job_id}")
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": "An internal error occurred while checking job status.",
                 }
             ),
             500,

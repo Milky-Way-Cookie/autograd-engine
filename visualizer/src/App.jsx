@@ -30,6 +30,8 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [training, setTraining] = useState(false);
+  const [trainingJobId, setTrainingJobId] = useState(null);
+  const [trainingStatus, setTrainingStatus] = useState(null);
   const [description, setDescription] = useState('');
   const [parseError, setParseError] = useState(null);
   const [explanations, setExplanations] = useState([]);
@@ -113,7 +115,10 @@ function App() {
   // Train new model
   const handleTrain = async (overrides = {}) => {
     setTraining(true);
+    setError(null);
+    setTrainingStatus('queuing');
     try {
+      // Step 1: Queue the training job
       const response = await fetch(`${API_BASE}/train`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -125,20 +130,58 @@ function App() {
           ...overrides,
         }),
       });
-      const data = await response.json();
-      if (data.status === 'success') {
-        setModelMetrics(data.metrics);
-        setModelCard(data.card);
-        setError(null);
-        await runInference(inputs);
-        await loadConfusionMatrix();
-      } else {
-        setError(data.message);
+      const queueData = await response.json();
+      if (queueData.status !== 'queued') {
+        setError(queueData.message || 'Failed to queue training job');
+        setTraining(false);
+        return;
       }
+
+      const jobId = queueData.job_id;
+      setTrainingJobId(jobId);
+      setTrainingStatus('queued');
+
+      // Step 2: Poll for job completion
+      const pollInterval = setInterval(async () => {
+        try {
+          const statusResponse = await fetch(`${API_BASE}/train-status/${jobId}`);
+          const statusData = await statusResponse.json();
+
+          if (statusResponse.status === 404) {
+            setError('Training job not found');
+            setTraining(false);
+            clearInterval(pollInterval);
+            return;
+          }
+
+          setTrainingStatus(statusData.status);
+
+          if (statusData.status === 'success') {
+            // Training complete!
+            clearInterval(pollInterval);
+            if (statusData.result) {
+              setModelMetrics(statusData.result.metrics || {});
+              setModelCard(statusData.result.card || {});
+              setError(null);
+              await runInference(inputs);
+              await loadConfusionMatrix();
+            }
+            setTraining(false);
+          } else if (statusData.status === 'error') {
+            // Training failed
+            clearInterval(pollInterval);
+            setError(statusData.error || 'Training failed');
+            setTraining(false);
+          }
+        } catch (err) {
+          console.error('Error polling training status:', err);
+          // Continue polling even on error
+        }
+      }, 1000); // Poll every 1 second
+
     } catch (err) {
       setError('Training failed: ' + err.message);
       console.error(err);
-    } finally {
       setTraining(false);
     }
   };
@@ -258,9 +301,12 @@ function App() {
                 disabled={training}
                 className="mt-5 w-full rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white shadow-lg shadow-purple-500/25 transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-purple-500/40"
               >
-                {training ? 'Training...' : 'Train New Model'}
+                {training ? `Training... (${trainingStatus || 'loading'})` : 'Train New Model'}
               </button>
               <p className="mt-3 text-xs text-slate-400">Generates new synthetic data and trains from scratch.</p>
+              {trainingJobId && (
+                <p className="mt-2 text-xs text-slate-500">Job ID: {trainingJobId.substring(0, 8)}...</p>
+              )}
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-cyan-500/10">
