@@ -10,4 +10,3 @@ A full‑stack demo of a custom autograd engine powering an MLP for credit risk 
 - Model metrics, audit report, and confusion matrix endpoint
 - React dashboard for training, inference, and visualization
 
-## Monorepo Structure
