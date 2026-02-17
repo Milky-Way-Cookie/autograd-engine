@@ -118,8 +118,8 @@ function App() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          dataset_size: overrides.dataset_size || 1200,
-          epochs: overrides.epochs || 220,
+          dataset_size: overrides.dataset_size || 600,
+          epochs: overrides.epochs || 120,
           learning_rate: overrides.learning_rate || 0.03,
           seed: overrides.seed || Math.floor(Math.random() * 10000),
           ...overrides,
