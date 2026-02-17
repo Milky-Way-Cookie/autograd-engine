@@ -301,7 +301,14 @@ function App() {
                 disabled={training}
                 className="mt-5 w-full rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white shadow-lg shadow-purple-500/25 transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-purple-500/40"
               >
-                {training ? `Training... (${trainingStatus || 'loading'})` : 'Train New Model'}
+                {training ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                    Training... ({trainingStatus || 'loading'})
+                  </span>
+                ) : (
+                  'Train New Model'
+                )}
               </button>
               <p className="mt-3 text-xs text-slate-400">Generates new synthetic data and trains from scratch.</p>
               {trainingJobId && (
